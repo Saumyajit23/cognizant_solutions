@@ -1,0 +1,13 @@
+1.	Understand Asymptotic Notation:
+o	Explain Big O notation and how it helps in analyzing algorithms.
+o	Describe the best, average, and worst-case scenarios for search operations.
+
+ans -> Big O notation is a way to measure how the performance of an algorithm grows with the size of the input. It helps compare the efficiency of algorithms by focusing on their time or space requirements. For search operations, the best case is when the target is found immediately (e.g., first element in linear search – O(1)). The average case assumes a typical position (e.g., middle – O(n/2) ≈ O(n)), and the worst case is when the element is at the end or not found at all (O(n) for linear search, O(log n) for binary search in sorted data).
+
+
+
+4.	Analysis: 
+o	Compare the time complexity of linear and binary search algorithms.
+o	Discuss which algorithm is more suitable for your platform and why.
+
+ans -> Linear search has a time complexity of O(n), as it checks each element one by one, while binary search is more efficient with a time complexity of O(log n) by repeatedly dividing the sorted array. For an e-commerce platform, binary search is more suitable due to its faster performance, assuming the product list is sorted. It offers quicker search times, which is essential for handling large product catalogs and providing a smooth user experience.
