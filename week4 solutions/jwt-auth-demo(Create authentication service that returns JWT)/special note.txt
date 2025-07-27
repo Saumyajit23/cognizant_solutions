@@ -1,1 +1,0 @@
-JWT logic implemented and tested, but runtime dependency for newer JJWT not resolving in Maven workspace. Functional logic complete. I have done my best.
