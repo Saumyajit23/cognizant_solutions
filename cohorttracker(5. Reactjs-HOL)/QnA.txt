@@ -1,5 +1,0 @@
-Q: Understanding the need for styling React component
-A: Styling React components improves UI clarity, usability, and user experience. It helps organize content visually and makes components more reusable and maintainable. Styling also supports responsive design and branding consistency.
-
-Q: Working with CSS Module and inline styles
-A: CSS Modules allow component-specific styles without global conflicts by scoping styles locally. Inline styles apply CSS directly in JSX using JavaScript objects, useful for dynamic styling. Both methods offer flexibility and control in styling React components.
