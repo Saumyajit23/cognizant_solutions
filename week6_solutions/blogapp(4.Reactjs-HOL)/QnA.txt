@@ -1,0 +1,27 @@
+Q: Explain the need and benefits of component life cycle
+A: The React component life cycle helps manage different stages of a component's existence — mounting, updating, and unmounting. It allows developers to run code at specific points like when a component is added, updated, or removed. This improves control, performance, and data handling in applications.
+
+Q: Identify various life cycle hook methods
+A: Important life cycle methods include:
+
+componentDidMount() – Runs after the component mounts
+
+componentDidUpdate() – Runs after updates
+
+componentWillUnmount() – Runs before removal
+
+componentDidCatch() – Catches rendering errors
+
+Q: List the sequence of steps in rendering a component
+A: The typical sequence in rendering a React component is:
+
+Constructor() – Initializes state
+
+render() – Returns JSX to the DOM
+
+componentDidMount() – Runs after the first render
+
+componentDidUpdate() – Runs after any re-render
+
+componentWillUnmount() – Cleans up before removal
+

@@ -1,0 +1,28 @@
+Q1: Define SPA and its benefits
+A1: A Single Page Application (SPA) is a web application that loads a single HTML page and dynamically updates content without reloading the entire page.
+SPAs provide a faster, smoother user experience and reduce the load on the server by only fetching the necessary data.
+
+Q2: Define React and identify its working
+A2: React is an open-source JavaScript library developed by Facebook for building interactive user interfaces.
+It works by breaking the UI into reusable components and using a virtual DOM to efficiently update and render only the changed parts of the UI.
+
+Q3: Identify the differences between SPA and MPA
+A3: SPA (Single Page Application) loads a single HTML file and uses JavaScript to update content dynamically, whereas MPA (Multi Page Application) loads a new HTML file from the server for every page.
+SPAs are faster and more responsive, while MPAs are better for SEO and complex websites.
+
+Q4: Explain Pros & Cons of Single-Page Application
+A4:
+Pros: SPAs offer a smooth and fast user experience, reduce server requests, and provide better performance with dynamic data.
+Cons: They are not SEO-friendly by default, can have slower initial load times, and may face issues with browser history and security.
+
+Q5: Explain about React
+A5: React is a component-based JavaScript library used to build fast and scalable web interfaces.
+It simplifies UI development by allowing developers to create small, reusable components that manage their own state and update efficiently using the virtual DOM.
+
+Q6: Define virtual DOM
+A6: The virtual DOM is a lightweight, in-memory representation of the actual DOM in the browser.
+React uses it to detect changes and update only the affected parts of the real DOM, which improves performance and rendering speed.
+
+Q7: Explain Features of React
+A7: React has several powerful features like component-based architecture, virtual DOM for faster updates, and one-way data binding.
+It also supports JSX (a syntax extension for JavaScript) and allows easy integration with other libraries or frameworks.

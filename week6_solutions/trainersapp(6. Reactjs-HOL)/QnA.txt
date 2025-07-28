@@ -1,0 +1,27 @@
+Q: Explain the need and benefits of React Router
+A: React Router enables navigation between different views in a single-page React application. It allows dynamic routing, maintains browser history, and prevents full-page reloads, improving performance and user experience.
+
+Q: Identify the Components in React Router
+A: Key components in React Router include:
+
+<BrowserRouter>: The router container for the app
+
+<Routes>: Wraps all route definitions
+
+<Route>: Defines individual paths and components
+
+<Link> / <NavLink>: Used for navigation
+
+Q: List the types of Router Components
+A: React Router provides several router types:
+
+BrowserRouter: For standard web apps (uses HTML5 history API)
+
+HashRouter: Uses the hash portion of the URL (/#/path)
+
+MemoryRouter: Keeps routing in memory (used for testing)
+
+Q: Parameter passing via URL
+A: URL parameters can be passed using :param in the route path.
+Example: <Route path="/user/:id" element={<User />} />
+Inside User component, use useParams() to access id.

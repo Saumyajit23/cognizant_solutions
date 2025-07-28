@@ -1,0 +1,15 @@
+Q: Define Props
+A: Props (short for properties) are used to pass data from one component to another in React, typically from parent to child. They are read-only and help make components reusable and dynamic.
+
+Q: Explain Default Props
+A: Default props are fallback values assigned to props when no value is provided by the parent component. They ensure the component works even if some props are missing.
+
+Example: MyComponent.defaultProps = { name: "Guest" };
+
+Q: Identify the differences between State and Props
+A: Props are passed from parent to child and are immutable. State is local to the component and can be updated using setState() (in class) or useState() (in function). Props control component behavior externally, while state manages internal data.
+
+Q: Explain ReactDOM.render()
+A: ReactDOM.render() is used to render a React component into the DOM. It takes two arguments: the component and the DOM element where it should be rendered.
+
+Example: ReactDOM.render(<App />, document.getElementById('root'));

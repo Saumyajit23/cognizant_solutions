@@ -1,0 +1,2 @@
+Q: Explain React State
+A: React state is an object that holds dynamic data for a component. It allows components to respond to user input, events, and changes over time. When the state changes, React automatically re-renders the component to reflect the updated data. State is managed using useState() in functional components or this.setState() in class components.

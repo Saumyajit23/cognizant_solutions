@@ -1,0 +1,54 @@
+import React from 'react';
+
+class CountPeople extends React.Component {
+    constructor(props) {
+        super(props);
+
+        // Initial state
+        this.state = {
+            entryCount: 0,
+            exitCount: 0
+        };
+
+        // Bind methods
+        this.updateEntry = this.updateEntry.bind(this);
+        this.updateExit = this.updateExit.bind(this);
+    }
+
+    // Method to update entry count
+    updateEntry() {
+        this.setState(prevState => ({
+            entryCount: prevState.entryCount + 1
+        }));
+    }
+
+    // Method to update exit count
+    updateExit() {
+        this.setState(prevState => ({
+            exitCount: prevState.exitCount + 1
+        }));
+    }
+
+    render() {
+        return (
+            <div style={{
+                textAlign: 'center',
+                marginTop: '50px',
+                fontFamily: 'Arial'
+            }}>
+                <h2>Welcome to the Mall</h2>
+                <p>Entry Count: <strong>{this.state.entryCount}</strong></p>
+                <p>Exit Count: <strong>{this.state.exitCount}</strong></p>
+
+                <button onClick={this.updateEntry} style={{ margin: '10px', padding: '10px 20px' }}>
+                    Login
+                </button>
+                <button onClick={this.updateExit} style={{ margin: '10px', padding: '10px 20px' }}>
+                    Exit
+                </button>
+            </div>
+        );
+    }
+}
+
+export default CountPeople;
