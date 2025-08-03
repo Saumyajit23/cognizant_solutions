@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 40px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.section {
+  flex: 1;
+  padding: 0 20px;
+  border-left: 4px solid green;
+}
+
+.section:first-child {
+  border-left: none;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 10px 0 5px;
+}
+
+p {
+  margin: 0 0 15px;
+}
+
+strong {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}

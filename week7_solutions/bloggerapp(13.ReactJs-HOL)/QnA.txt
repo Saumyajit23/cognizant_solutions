@@ -1,0 +1,27 @@
+Q1: Explain various ways of conditional rendering
+React supports several ways to conditionally render components:
+Using if/else statements
+Ternary operator (condition ? true : false)
+Logical && operator for short-circuit rendering
+Element variables that store JSX conditionally
+These methods help show different content based on state or props.
+
+Q2: Explain how to render multiple components
+You can render multiple components in React by returning them together from a parent component using a single enclosing tag like a <div>, <section>, or React.Fragment. Example:
+<>
+  <Header />
+  <Content />
+</>
+
+Q3: Define list component
+A list component in React displays a collection of similar items using array methods like .map(). Each item is rendered inside the component using JSX, and a unique key should be assigned for each list element.
+
+Q4: Explain about keys in React applications
+Keys are special props used by React to track which items have changed, been added, or removed in a list. They help optimize rendering and must be unique among siblings, often based on id or index.
+
+Q5: Explain how to extract components with keys
+When mapping through a list to render multiple components, you extract each item into a child component and pass a unique key prop. This helps React identify and manage individual components efficiently.
+
+Q6: Explain React Map, map() function
+In React, .map() is used to iterate over arrays and return elements or components. It is commonly used for rendering lists. Each item should be wrapped in JSX and given a unique key. Example:
+items.map(item => <li key={item.id}>{item.name}</li>)

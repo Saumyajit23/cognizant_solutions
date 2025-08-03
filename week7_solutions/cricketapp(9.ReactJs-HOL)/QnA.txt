@@ -1,0 +1,26 @@
+Q1: List the features of ES6
+ES6 (ECMAScript 2015) introduced several features such as let, const, arrow functions, template literals, classes, modules, default parameters, destructuring, promises, and enhanced object literals. These features improve code readability and structure in JavaScript.
+
+Q2: Explain JavaScript let
+The let keyword declares a block-scoped variable. Unlike var, it doesn't get hoisted to the top of its scope and prevents redeclaration in the same scope, making it safer to use in modern JavaScript.
+
+Q3: Identify the differences between var and let
+var is function-scoped and hoisted, meaning it can be used before declaration. let is block-scoped and not hoisted in the same way, making it more predictable and less prone to bugs. let also disallows redeclaring the same variable in the same scope.
+
+Q4: Explain JavaScript const
+const declares a constant block-scoped variable that cannot be reassigned. However, if it's used with objects or arrays, their contents can still be modified. It enforces immutability of the binding, not the value.
+
+Q5: Explain ES6 class fundamentals
+ES6 classes provide a clearer and more concise syntax for creating objects and dealing with inheritance. They use the class keyword with a constructor and methods, and they simplify prototype-based object-oriented programming.
+
+Q6: Explain ES6 class inheritance
+ES6 supports class inheritance using the extends keyword. A child class can inherit properties and methods from a parent class and can also use super() to call the parent’s constructor and methods, enabling code reuse.
+
+Q7: Define ES6 arrow functions
+Arrow functions (=>) provide a shorter syntax for writing functions. They do not bind their own this, which makes them ideal for callbacks or methods where you want to retain the outer scope's this.
+
+Q8: Identify set(), map()
+Set is a collection of unique values; it automatically removes duplicates.
+
+Map is a key-value pair collection where keys can be of any type. Both are iterable and were introduced in ES6 for more advanced data handling.
+

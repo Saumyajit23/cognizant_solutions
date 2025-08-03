@@ -1,0 +1,19 @@
+import logo from './logo.svg';
+import './App.css';
+import React from 'react';
+import CourseDetails from './components/CourseDetails';
+import BookDetails from './components/BookDetails';
+import BlogDetails from './components/BlogDetails';
+import './index.css';
+
+function App() {
+  return (
+    <div className="container">
+      <CourseDetails />
+      <BookDetails />
+      <BlogDetails />
+    </div>
+  );
+}
+
+export default App;

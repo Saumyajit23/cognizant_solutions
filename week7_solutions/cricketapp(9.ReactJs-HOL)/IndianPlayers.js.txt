@@ -1,0 +1,52 @@
+import React from 'react';
+
+const IndianPlayers = () => {
+  const T20players = ['Sachin1', 'Dhoni2', 'Virat3'];
+  const RanjiPlayers = ['Rohit4', 'Yuvaraj5', 'Raina6'];
+
+  const allPlayers = [...T20players, ...RanjiPlayers];
+
+  // Define odd and even indexed players with labels
+  const oddPlayers = [
+    { label: 'First', name: allPlayers[0] },
+    { label: 'Third', name: allPlayers[2] },
+    { label: 'Fifth', name: allPlayers[4] }
+  ];
+
+  const evenPlayers = [
+    { label: 'Second', name: allPlayers[1] },
+    { label: 'Fourth', name: allPlayers[3] },
+    { label: 'Sixth', name: allPlayers[5] }
+  ];
+
+  return (
+    <div>
+      <h2>Odd Players</h2>
+      <ul>
+        {oddPlayers.map((player, index) => (
+          <li key={index}>
+            {player.label} : {player.name}
+          </li>
+        ))}
+      </ul>
+
+      <h2>Even Players</h2>
+      <ul>
+        {evenPlayers.map((player, index) => (
+          <li key={index}>
+            {player.label} : {player.name}
+          </li>
+        ))}
+      </ul>
+
+      <h2>List of Indian Players Merged:</h2>
+      <ul>
+        {allPlayers.map((name, index) => (
+          <li key={index}>Mr. {name.replace(/[0-9]/g, '')} Player</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default IndianPlayers;

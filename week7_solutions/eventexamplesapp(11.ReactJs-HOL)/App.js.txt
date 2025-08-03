@@ -1,0 +1,63 @@
+import logo from './logo.svg';
+import './App.css';
+import React, { Component } from 'react';
+import CurrencyConvertor from './components/CurrencyConvertor';
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      counter: 0
+    };
+  }
+
+  handleIncrement = () => {
+    this.setState(prevState => ({ counter: prevState.counter + 1 }));
+    this.sayHello();
+  };
+
+  handleDecrement = () => {
+    this.setState(prevState => ({ counter: prevState.counter - 1 }));
+  };
+
+  sayHello = () => {
+    alert('Hello from React!');
+  };
+
+  sayWelcome = (msg) => {
+    alert(msg);
+  };
+
+  handleSyntheticEvent = (e) => {
+    e.preventDefault(); // synthetic event
+    alert('I was clicked');
+  };
+
+  render() {
+    return (
+      <div style={{ padding: '20px', fontFamily: 'Arial' }}>
+        <h1>React Event Handling Example</h1>
+
+        <h2>Counter: {this.state.counter}</h2>
+        <button onClick={this.handleIncrement}>Increment</button>{' '}
+        <button onClick={this.handleDecrement}>Decrement</button>
+
+        <hr />
+
+        <button onClick={() => this.sayWelcome('Welcome')}>
+          Say Welcome
+        </button>
+
+        <hr />
+
+        <button onClick={this.handleSyntheticEvent}>Click Me</button>
+
+        <hr />
+
+        <CurrencyConvertor />
+      </div>
+    );
+  }
+}
+
+export default App;

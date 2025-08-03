@@ -1,0 +1,9 @@
+Q1: Explain about conditional rendering in React
+Conditional rendering in React means showing or hiding elements based on certain conditions. It can be done using JavaScript operators like if, ? :, and && directly in JSX to render different UI elements based on state or props.
+
+Q2: Define element variables
+Element variables in React are used to store JSX elements in a variable. This allows dynamic assignment and rendering of different components by assigning them conditionally inside the render logic before returning JSX.
+
+Q3: Explain how to prevent components from rendering
+To prevent a component from rendering, you can return null in its render method or functional component. This tells React to skip rendering that part of the UI without causing errors or breaking layout.
+

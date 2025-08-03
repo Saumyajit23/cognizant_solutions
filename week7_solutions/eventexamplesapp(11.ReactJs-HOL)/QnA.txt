@@ -1,0 +1,11 @@
+Q1: Explain React events
+React events are objects that wrap native browser events to provide consistent behavior across all browsers. They are triggered by user interactions like clicks, input, or key presses in JSX elements.
+
+Q2: Explain about event handlers
+Event handlers in React are functions that handle specific events like onClick, onChange, etc. These handlers are passed as props to JSX elements and control how components respond to user input or actions.
+
+Q3: Define Synthetic event
+A SyntheticEvent is a cross-browser wrapper around the browser’s native event. It normalizes events to ensure they behave identically across different browsers, and is used in all React event handling.
+
+Q4: Identify React event naming convention
+In React, event names are written in camelCase instead of lowercase. For example, onclick becomes onClick, and onchange becomes onChange.

@@ -1,0 +1,90 @@
+import React from 'react';
+
+function App() {
+  const heading = <h1>Office Space Rental Application</h1>;
+
+  const officeDetails = {
+    name: 'Elite Tower',
+    rent: 55000,
+    address: '123 Corporate Street, Business Bay, Mumbai',
+    image: '/images/elite-tower.jpeg' // ✅ LOCAL image path
+  };
+
+  const officeList = [
+    {
+      name: 'Elite Tower',
+      rent: 55000,
+      address: '123 Corporate Street, Mumbai',
+      image: '/images/elite-tower.jpeg'
+    },
+    {
+      name: 'Oceanic Plaza',
+      rent: 65000,
+      address: '45 Marine Drive, Mumbai',
+      image: '/images/oceanic-plaza.jpeg'
+    },
+    {
+      name: 'Green Square',
+      rent: 58000,
+      address: '78 Link Road, Pune',
+      image: '/images/green-square.jpeg'
+    },
+    {
+      name: 'Tech Hub',
+      rent: 72000,
+      address: '9 Silicon Valley, Bengaluru',
+      image: '/images/tech-hub.jpeg'
+    }
+  ];
+
+  return (
+    <div style={{ padding: '20px', fontFamily: 'Arial', backgroundColor: '#111', color: '#fff' }}>
+      {/* JSX heading */}
+      {heading}
+
+      {/* Featured Office Image */}
+      <img
+        src={officeDetails.image}
+        alt="Office Space"
+        style={{ width: '100%', maxWidth: '600px', height: 'auto', margin: '20px 0', borderRadius: '8px' }}
+      />
+
+      {/* Featured Office Details */}
+      <h2>Featured Office</h2>
+      <p><strong>Name:</strong> {officeDetails.name}</p>
+      <p><strong>Address:</strong> {officeDetails.address}</p>
+      <p>
+        <strong>Rent:</strong>{' '}
+        <span style={{ color: officeDetails.rent < 60000 ? 'red' : 'lightgreen' }}>
+          ₹{officeDetails.rent}
+        </span>
+      </p>
+
+      <hr style={{ margin: '40px 0' }} />
+
+      {/* All Offices List */}
+      <h2>All Available Offices</h2>
+      <ul style={{ listStyle: 'none', padding: 0 }}>
+        {officeList.map((office, index) => (
+          <li key={index} style={{ marginBottom: '30px', borderBottom: '1px solid #444', paddingBottom: '20px' }}>
+            <img
+              src={office.image}
+              alt={office.name}
+              style={{ width: '100%', maxWidth: '400px', height: 'auto', borderRadius: '8px', marginBottom: '10px' }}
+            />
+            <p><strong>Name:</strong> {office.name}</p>
+            <p><strong>Address:</strong> {office.address}</p>
+            <p>
+              <strong>Rent:</strong>{' '}
+              <span style={{ color: office.rent < 60000 ? 'red' : 'lightgreen' }}>
+                ₹{office.rent}
+              </span>
+            </p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default App;

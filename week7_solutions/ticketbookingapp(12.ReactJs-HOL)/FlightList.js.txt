@@ -1,0 +1,25 @@
+import React from 'react';
+
+const dummyFlights = [
+  { id: 1, from: "Delhi", to: "Mumbai", time: "10:00 AM" },
+  { id: 2, from: "Bangalore", to: "Chennai", time: "1:00 PM" },
+  { id: 3, from: "Kolkata", to: "Pune", time: "6:00 PM" }
+];
+
+function FlightList({ canBook = false }) {
+  return (
+    <div>
+      <h3>Flight Details</h3>
+      <ul>
+        {dummyFlights.map(flight => (
+          <li key={flight.id}>
+            {flight.from} → {flight.to} at {flight.time}
+            {canBook && <button style={{ marginLeft: '10px' }}>Book</button>}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default FlightList;
