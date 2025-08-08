@@ -1,0 +1,24 @@
+ Question 1:
+Explain git ignore
+
+ Answer:
+.gitignore is a special file in Git that tells the system which files or folders to ignore in a project. These ignored files will not be tracked, staged, or committed to the repository. It is commonly used to exclude temporary files, build outputs, log files, IDE settings, and other files that should not be part of the version control.
+
+ Question 2:
+Explain how to ignore unwanted files using git ignore
+
+ Answer:
+To ignore unwanted files in Git:
+
+Create a file named .gitignore in your repository's root folder.
+
+Add rules for files or folders you want to ignore. For example:
+*.log         # ignore all .log files
+/log/         # ignore the log directory
+temp.txt      # ignore a specific file
+
+Save the file and commit it:
+git add .gitignore
+git commit -m "Add .gitignore to exclude unwanted files"
+
+After this, Git will automatically exclude those specified files from being tracked.

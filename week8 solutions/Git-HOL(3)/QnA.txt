@@ -1,0 +1,8 @@
+Question: Explain branching and merging
+Answer: Branching allows developers to create separate versions of the code to work on features or fixes independently. Merging is the process of combining changes from one branch (like a feature branch) into another (typically the main branch), integrating all updates into a single codebase.
+
+Question: Explain about creating a branch request in GitLab
+Answer: In GitLab, there isn’t a specific "branch request" feature. However, users can create a new branch either via the GitLab UI or by pushing a branch from their local system using Git. Once the branch is created, developers can start working on their changes.
+
+Question: Explain about creating a merge request in GitLab
+Answer: A merge request (MR) in GitLab is used to propose changes from one branch to another. To create an MR, go to your project, navigate to "Merge Requests", and click "New merge request". Select the source and target branches, add a title and description, and submit it for review and approval.

@@ -1,0 +1,9 @@
+Question: Explain how to resolve the conflict during merge.
+Answer: When a merge conflict occurs, Git marks the conflicting files. To resolve it, open the file, look for conflict markers (<<<<<<<, =======, >>>>>>>), and manually edit the code to keep the correct changes. After editing, save the file, stage it using git add, and then complete the merge with git commit. Tools like GitLab, VS Code, or GitKraken can help visually resolve conflicts more easily.
+
+
+
+
+
+
+

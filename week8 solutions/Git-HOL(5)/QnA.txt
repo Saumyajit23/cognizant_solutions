@@ -1,0 +1,2 @@
+Question: Explain how to clean up and push back to remote Git
+Answer: After resolving conflicts or completing changes, you can clean up by removing temporary or merged branches using git branch -d <branch_name>. Then, commit any remaining changes with git commit, and push them to the remote repository using git push origin <branch_name>. This ensures your local updates are reflected in the remote Git repository.
